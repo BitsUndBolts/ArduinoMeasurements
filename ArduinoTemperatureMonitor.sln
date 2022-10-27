@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempDisplay", "TempDisplay.csproj", "{B0A49AA1-1370-4AE6-A5B8-CE2315B1EFB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArduinoTemperatureMonitor", "ArduinoTemperatureMonitor.csproj", "{CFC4C106-2786-4CAC-8DB9-4B93BBC2DF13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B0A49AA1-1370-4AE6-A5B8-CE2315B1EFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0A49AA1-1370-4AE6-A5B8-CE2315B1EFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0A49AA1-1370-4AE6-A5B8-CE2315B1EFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0A49AA1-1370-4AE6-A5B8-CE2315B1EFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC4C106-2786-4CAC-8DB9-4B93BBC2DF13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC4C106-2786-4CAC-8DB9-4B93BBC2DF13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC4C106-2786-4CAC-8DB9-4B93BBC2DF13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC4C106-2786-4CAC-8DB9-4B93BBC2DF13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {83ED73C1-A6FB-458E-9E7B-EBA2319E8759}
+		SolutionGuid = {409FA886-3895-47A7-B803-2873B85E90EC}
 	EndGlobalSection
 EndGlobal

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TempDisplay.Properties
+namespace ArduinoTemperatureMonitor.Properties
 {
 
 

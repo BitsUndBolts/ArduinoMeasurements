@@ -1,9 +1,11 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.IO.Ports;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
+using System.IO.Ports;
+using System.Windows.Forms;
 
-namespace TempDisplay
+namespace ArduinoTemperatureMonitor
 {
     public partial class Form1 : Form
     {
@@ -120,7 +122,7 @@ namespace TempDisplay
             if (((MouseEventArgs)e).Button == MouseButtons.Right)
             {
                 temp_label.BackColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
-                temp_label.ForeColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256)); 
+                temp_label.ForeColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), rnd.Next(256));
             }
             else if (((MouseEventArgs)e).Button == MouseButtons.Left)
             {
