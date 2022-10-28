@@ -3,20 +3,22 @@ C# Application to read serial data from Arduino and display temperature.
 Changed target Framework to be compatible with Windows 98.
 
 # Dependencies
-- Microsoft .NET Framework 2.0
-- Microsoft Windows Installer 2.0
-- Microsoft Internet Explorer 5.01
+- Microsoft .NET Framework 2.0 (Source: http://www.oldversion.com/windows/net-framework-2-0)
+- Microsoft Windows Installer 2.0 (Source: https://archive.org/details/instmsi)
+- Microsoft Internet Explorer 5.01 (Source: https://winworldpc.com/download/46e28093-2511-18c3-9a11-c3a4e284a2ef)
 - Arduino Serial Driver
 
 # Installation order
-1) Microsoft Windows Installer 2.0 (\_Dependencies\Microsoft Windows Installer 2.0.exe)<br />
+1) Microsoft Windows Installer 2.0 (URL provided above)<br />
    *You most likely will be asked to restart your PC after installation*
    
-2) Microsoft Internet Explorer 5.5 (\_Dependencies\Internet Explorer 5.5\IE5SETUP.EXE)<br />
+2) Microsoft Internet Explorer 5.5 (URL provided above)<br />
    *Just go for minimal and update the browser only*
+   *You most likely will be asked to restart your PC after installation*
 
-3) Microsoft .NET Framework 2.0 (\_Dependencies\dotnetfx_2.0.exe)<br />
+3) Microsoft .NET Framework 2.0 (URL provided above)<br />
    *Will take a long time to install - be patient*
+   *You most likely will be asked to restart your PC after installation*
 
 4) Arduino Serial Driver (\_Dependencies\Arduino_Serial_Driver\SETUP.EXE)<br />
    *A bit complex... When asked for file 'CH341SER.CAT', please navigate to '_Dependencies\Arduino_Serial_Driver'*<br />
