@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.IO.Ports;
 using System.Windows.Forms;
@@ -28,12 +26,9 @@ namespace ArduinoTemperatureMonitor
             foreach (var port in availablePorts)
             {
                 comPorts.Items.Add(port);
-            }
-
-            if (availablePorts.Length > 0)
-            {
                 comPorts.SelectedIndex = 0;
             }
+
         }
 
         delegate void SetTextCallback(Control control, string text);
@@ -66,8 +61,9 @@ namespace ArduinoTemperatureMonitor
 
         private void Start_click(object sender, EventArgs e)
         {
-            if (StartMonitor())
+            if (!_port.IsOpen)
             {
+                StartMonitor();
                 startStopButton.Text = "Stop";
             }
             else
@@ -77,38 +73,31 @@ namespace ArduinoTemperatureMonitor
             }
         }
 
-        private bool StartMonitor()
+        private void StartMonitor()
         {
-            if (!_port.IsOpen)
+            try
             {
-                try
-                {
-                    _port.PortName = comPorts.Items[comPorts.SelectedIndex].ToString();
-                    _port.BaudRate = int.Parse(baudRate.Text);
-                    _port.DataReceived += Port_DataReceived;
-                    _port.Open();
-                    return true;
-                }
-                catch (Exception ex)
-                {
-                    StopMonitor();
-                    _port.DataReceived -= Port_DataReceived;
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                _port.PortName = comPorts.Items[comPorts.SelectedIndex].ToString();
+                _port.BaudRate = int.Parse(baudRate.Text);
+                _port.DataReceived += Port_DataReceived;
+                _port.Open();
             }
-            return false;
+            catch (Exception ex)
+            {
+                StopMonitor();
+                _port.DataReceived -= Port_DataReceived;
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private bool StopMonitor()
+        private void StopMonitor()
         {
             if (_port.IsOpen)
             {
                 _port.DataReceived -= Port_DataReceived;
                 _port.Close();
                 temp_label.Text = "No Data";
-                return true;
             }
-            return false;
         }
 
         private void Refresh_Click(object sender, EventArgs e)
