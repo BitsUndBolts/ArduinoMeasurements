@@ -21,6 +21,9 @@ Changed target Framework to be compatible with Windows 98.
 4) Arduino Serial Driver (\_Dependencies\Arduino_Serial_Driver\SETUP.EXE)<br />
    *A bit complex... When asked for file 'CH341SER.CAT', please navigate to '_Dependencies\Arduino_Serial_Driver'*<br />
    *When asked for file 'CH341PORTS.DLL', you can try to select the file. It did not work for me. I skipped this file. Installation still worked.*
+   
+# Arduino Sketch
+Located under: \_Dependencies\Arduino_Sketch\TemperatureSensor.ino
 
 # User Interface
 ![image](https://user-images.githubusercontent.com/88672050/198045940-de316272-5304-4358-8db8-abc555d37f1f.png)
