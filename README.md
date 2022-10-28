@@ -27,3 +27,6 @@ Located under: \_Dependencies\Arduino_Sketch\TemperatureSensor.ino
 
 # User Interface
 ![image](https://user-images.githubusercontent.com/88672050/198045940-de316272-5304-4358-8db8-abc555d37f1f.png)
+
+# Schematics
+![image](https://user-images.githubusercontent.com/88672050/198504841-77c3ede9-06e9-40fc-970f-b8570642e08c.png)
