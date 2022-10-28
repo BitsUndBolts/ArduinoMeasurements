@@ -64,12 +64,10 @@ namespace ArduinoTemperatureMonitor
             if (!_port.IsOpen)
             {
                 StartMonitor();
-                startStopButton.Text = "Stop";
             }
             else
             {
                 StopMonitor();
-                startStopButton.Text = "Start";
             }
         }
 
@@ -81,6 +79,7 @@ namespace ArduinoTemperatureMonitor
                 _port.BaudRate = int.Parse(baudRate.Text);
                 _port.DataReceived += Port_DataReceived;
                 _port.Open();
+                startStopButton.Text = "Stop";
             }
             catch (Exception ex)
             {
@@ -97,6 +96,7 @@ namespace ArduinoTemperatureMonitor
                 _port.DataReceived -= Port_DataReceived;
                 _port.Close();
                 temp_label.Text = "No Data";
+                startStopButton.Text = "Start";
             }
         }
 
