@@ -32,7 +32,3 @@ Located under: \_Dependencies\Arduino_Sketch\TemperatureSensor.ino
 
 # Schematics
 ![image](https://user-images.githubusercontent.com/88672050/198504841-77c3ede9-06e9-40fc-970f-b8570642e08c.png)
-
-# Download Binary
-Here you can download the compiled binary file: [ArduinoTemperatureMonitor.zip](https://github.com/BitsUndBolts/ArduinoTemperatureUI/files/9893729/ArduinoTemperatureMonitor.zip)
-
