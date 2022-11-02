@@ -35,3 +35,7 @@ Located under: \_Dependencies\Arduino_Sketch\TemperatureSensor.ino
 
 # Binary file download
 Precompiled version: [ArduinoTemperatureMonitor.zip](https://github.com/BitsUndBolts/ArduinoTemperatureUI/files/9893765/ArduinoTemperatureMonitor.zip)
+
+# YouTube Video
+Here is a Video I have uploaded to YouTube where I use the content of this repository:
+[![YouTube Video using the code in this repository](https://img.youtube.com/vi/zODN7qewLbo/0.jpg)](https://youtu.be/zODN7qewLbo)
