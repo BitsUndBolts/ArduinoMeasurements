@@ -9,10 +9,11 @@ const float VOLT_R2 = 10000.0;  // Resistor 2 value
 const float VOLT_REF = 5.0;     
 
 // --- Protocol ---
-bool pinActive[6] = { false, false, false, false, false, false };
+bool pinActive[6] = { true, false, false, true, false, false };
 const char EMPTY[1] = "";
 const char SEPERATOR[2] = "|";
 const char TERMINATOR[2]  = ";";
+int pinToChange = -1;
 
 void setup() {
   Serial.begin(9600);
@@ -29,10 +30,9 @@ float voltage(int pin) {
 
 void loop() {
 
-  int pos = 0;
-  while (Serial.available() > 0 && pos <= 5) {
-    pinActive[pos] = (Serial.read() == 49 ? true : false);
-    pos++;
+  while (Serial.available() > 0) {
+    pinToChange = Serial.read();
+    pinActive[pinToChange] = !pinActive[pinToChange];
   }
   
   pinActive[0] ? Serial.print(temperature(A0)) : Serial.print(EMPTY);

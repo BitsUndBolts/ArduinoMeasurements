@@ -48,6 +48,9 @@
             this.baudRate = new System.Windows.Forms.TextBox();
             this.comPorts = new System.Windows.Forms.ComboBox();
             this.startStopButton = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Data_Display = new System.Windows.Forms.ToolStripStatusLabel();
             this.tempLabelContainer.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -55,6 +58,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tempLabelContainer
@@ -70,14 +74,14 @@
             this.tempLabelContainer.Controls.Add(this.groupBox1);
             this.tempLabelContainer.Location = new System.Drawing.Point(0, 44);
             this.tempLabelContainer.Name = "tempLabelContainer";
-            this.tempLabelContainer.Size = new System.Drawing.Size(619, 215);
+            this.tempLabelContainer.Size = new System.Drawing.Size(619, 239);
             this.tempLabelContainer.TabIndex = 15;
             // 
             // groupBox4
             // 
             this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox4.Controls.Add(this.volt_A5);
-            this.groupBox4.Location = new System.Drawing.Point(415, 109);
+            this.groupBox4.Location = new System.Drawing.Point(415, 110);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(200, 100);
             this.groupBox4.TabIndex = 5;
@@ -103,7 +107,7 @@
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox3.Controls.Add(this.temp_A2);
-            this.groupBox3.Location = new System.Drawing.Point(415, 3);
+            this.groupBox3.Location = new System.Drawing.Point(415, 4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(200, 100);
             this.groupBox3.TabIndex = 2;
@@ -129,7 +133,7 @@
             // 
             this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox5.Controls.Add(this.volt_A4);
-            this.groupBox5.Location = new System.Drawing.Point(209, 109);
+            this.groupBox5.Location = new System.Drawing.Point(209, 110);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(200, 100);
             this.groupBox5.TabIndex = 4;
@@ -155,7 +159,7 @@
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.temp_A1);
-            this.groupBox2.Location = new System.Drawing.Point(209, 3);
+            this.groupBox2.Location = new System.Drawing.Point(209, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 100);
             this.groupBox2.TabIndex = 1;
@@ -181,7 +185,7 @@
             // 
             this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox6.Controls.Add(this.volt_A3);
-            this.groupBox6.Location = new System.Drawing.Point(3, 109);
+            this.groupBox6.Location = new System.Drawing.Point(3, 110);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(200, 100);
             this.groupBox6.TabIndex = 3;
@@ -207,7 +211,7 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.temp_A0);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Location = new System.Drawing.Point(3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 0;
@@ -233,7 +237,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(464, 2);
+            this.label2.Location = new System.Drawing.Point(441, 4);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 14;
@@ -242,7 +246,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 2);
+            this.label1.Location = new System.Drawing.Point(9, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 13;
@@ -253,7 +257,7 @@
             this.refresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.refresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.refresh.Font = new System.Drawing.Font("Wingdings 3", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.refresh.Location = new System.Drawing.Point(438, 16);
+            this.refresh.Location = new System.Drawing.Point(415, 19);
             this.refresh.Name = "refresh";
             this.refresh.Size = new System.Drawing.Size(23, 23);
             this.refresh.TabIndex = 10;
@@ -264,9 +268,9 @@
             // baudRate
             // 
             this.baudRate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.baudRate.Location = new System.Drawing.Point(467, 18);
+            this.baudRate.Location = new System.Drawing.Point(444, 21);
             this.baudRate.Name = "baudRate";
-            this.baudRate.Size = new System.Drawing.Size(75, 20);
+            this.baudRate.Size = new System.Drawing.Size(83, 20);
             this.baudRate.TabIndex = 11;
             this.baudRate.Text = "9600";
             this.baudRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -277,32 +281,58 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comPorts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comPorts.FormattingEnabled = true;
+            this.comPorts.ItemHeight = 13;
             this.comPorts.Items.AddRange(new object[] {
             "1",
             "2",
             "3"});
-            this.comPorts.Location = new System.Drawing.Point(12, 18);
+            this.comPorts.Location = new System.Drawing.Point(12, 20);
             this.comPorts.Name = "comPorts";
-            this.comPorts.Size = new System.Drawing.Size(420, 21);
+            this.comPorts.Size = new System.Drawing.Size(397, 21);
             this.comPorts.TabIndex = 9;
             // 
             // startStopButton
             // 
             this.startStopButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.startStopButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.startStopButton.Location = new System.Drawing.Point(548, 16);
+            this.startStopButton.Location = new System.Drawing.Point(533, 19);
             this.startStopButton.Name = "startStopButton";
-            this.startStopButton.Size = new System.Drawing.Size(59, 23);
+            this.startStopButton.Size = new System.Drawing.Size(74, 23);
             this.startStopButton.TabIndex = 12;
-            this.startStopButton.Text = "Start";
+            this.startStopButton.Text = "Connect";
             this.startStopButton.UseVisualStyleBackColor = true;
             this.startStopButton.Click += new System.EventHandler(this.Start_click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.Data_Display});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 257);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(619, 22);
+            this.statusStrip1.SizingGrip = false;
+            this.statusStrip1.TabIndex = 16;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(34, 17);
+            this.toolStripStatusLabel1.Text = "Data:";
+            // 
+            // Data_Display
+            // 
+            this.Data_Display.Name = "Data_Display";
+            this.Data_Display.Size = new System.Drawing.Size(18, 17);
+            this.Data_Display.Text = " - ";
             // 
             // Sensors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 255);
+            this.ClientSize = new System.Drawing.Size(619, 279);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tempLabelContainer);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -310,9 +340,10 @@
             this.Controls.Add(this.baudRate);
             this.Controls.Add(this.comPorts);
             this.Controls.Add(this.startStopButton);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(635, 294);
-            this.MinimumSize = new System.Drawing.Size(635, 294);
+            this.MaximumSize = new System.Drawing.Size(635, 318);
+            this.MinimumSize = new System.Drawing.Size(635, 318);
             this.Name = "Sensors";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arduino Sensors";
@@ -323,6 +354,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,6 +382,9 @@
         private System.Windows.Forms.Label volt_A3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label temp_A0;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel Data_Display;
     }
 }
 
