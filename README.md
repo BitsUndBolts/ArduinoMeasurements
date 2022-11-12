@@ -28,7 +28,7 @@ The target .NET Framework is 2.0 to be compatible with Windows 98.
 Located under: \_Dependencies\ArduinoSensors\ArduinoSensors.ino
 
 # User Interface
-![image](https://user-images.githubusercontent.com/88672050/201460706-b9053688-772c-4a90-9d6c-0b78a7938ab0.png)
+![image](https://user-images.githubusercontent.com/88672050/201484735-b7d8633e-8e13-4291-9762-7a56df95f6ff.png)
 
 # Schematics
 
@@ -39,7 +39,7 @@ Located under: \_Dependencies\ArduinoSensors\ArduinoSensors.ino
 - coming soon -
 
 # Binary file download
-Precompiled version: - coming soon -
+Precompiled version: [ArduinoSensors.zip](https://github.com/BitsUndBolts/ArduinoSensors/files/9995447/ArduinoSensors.zip)
 
 # YouTube Video
 Here is a video I have uploaded to YouTube where I use the content of this repository:
