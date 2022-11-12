@@ -1,6 +1,6 @@
-# ArduinoTemperatureUI
-C# Application to read serial data from Arduino and display temperature.
-Changed target Framework to be compatible with Windows 98.
+# Arduino Sensors
+C# Application to read serial data from Arduino and display temperatures and voltage.<br>
+The target .NET Framework is 2.0 to be compatible with Windows 98.
 
 # Dependencies
 - Microsoft .NET Framework 2.0 (Source: http://www.oldversion.com/windows/net-framework-2-0)
@@ -24,18 +24,23 @@ Changed target Framework to be compatible with Windows 98.
    *A bit complex... When asked for file 'CH341SER.CAT', please navigate to '_Dependencies\Arduino_Serial_Driver'*<br />
    *When asked for file 'CH341PORTS.DLL', you can try to select the file. It did not work for me. I skipped this file. Installation still worked.*
    
-# Arduino Sketch
-Located under: \_Dependencies\Arduino_Sketch\TemperatureSensor.ino
+# Arduino Sketch (temperature and voltage)
+Located under: \_Dependencies\ArduinoSensors\ArduinoSensors.ino
 
 # User Interface
-![image](https://user-images.githubusercontent.com/88672050/198045940-de316272-5304-4358-8db8-abc555d37f1f.png)
+![image](https://user-images.githubusercontent.com/88672050/201460706-b9053688-772c-4a90-9d6c-0b78a7938ab0.png)
 
 # Schematics
+
+## Temperature Sensor
 ![image](https://user-images.githubusercontent.com/88672050/198504841-77c3ede9-06e9-40fc-970f-b8570642e08c.png)
 
+## Voltage Sensor
+- coming soon -
+
 # Binary file download
-Precompiled version: [ArduinoTemperatureMonitor.zip](https://github.com/BitsUndBolts/ArduinoTemperatureUI/files/9893765/ArduinoTemperatureMonitor.zip)
+Precompiled version: - coming soon -
 
 # YouTube Video
-Here is a Video I have uploaded to YouTube where I use the content of this repository:
-[![YouTube Video using the code in this repository](https://img.youtube.com/vi/zODN7qewLbo/0.jpg)](https://youtu.be/zODN7qewLbo)
+Here is a video I have uploaded to YouTube where I use the content of this repository:
+- coming soon -
