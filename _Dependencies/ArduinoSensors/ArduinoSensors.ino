@@ -4,8 +4,8 @@ const float R = 10000;
 const float c1 = 1.009249522e-03, c2 = 2.378405444e-04, c3 = 2.019202697e-07;
 
 // --- Voltage ---
-const float VOLT_R1 = 100000.0; // Resistor 1 value
-const float VOLT_R2 = 10000.0;  // Resistor 2 value
+const float VOLT_R1 = 19730.0; // Resistor 1 value (those are my values - measured with multimeter)
+const float VOLT_R2 = 9800.0; // Resistor 2 value (those are my values - measured with multimeter)
 const float VOLT_REF = 5.0;     
 
 // --- Protocol ---
