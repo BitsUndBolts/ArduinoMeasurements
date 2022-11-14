@@ -38,9 +38,9 @@ Located under: \_Dependencies\ArduinoSensors\ArduinoSensors.ino
 ## Voltage Sensor
 
 > __Warning__<br />
-Do not measure higher voltages than 12V DC. The absolute maximum is ~15V!
+The maximum voltage that can be measured is ~15V DC!
 
-![image](https://user-images.githubusercontent.com/88672050/201532348-7270c64c-3323-4ede-b220-b070b2d0c8e6.png)
+![image](https://user-images.githubusercontent.com/88672050/201735425-d4f8a2f7-c846-4319-ba0c-8f51cb03cf9a.png)
 
 # Binary file download
 Precompiled version: [ArduinoSensors.zip](https://github.com/BitsUndBolts/ArduinoSensors/files/9995447/ArduinoSensors.zip)
