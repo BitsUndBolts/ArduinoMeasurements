@@ -33,7 +33,7 @@ Located under: \_Dependencies\ArduinoSensors\ArduinoSensors.ino
 # Schematics
 
 ## Temperature Sensor
-![image](https://user-images.githubusercontent.com/88672050/198504841-77c3ede9-06e9-40fc-970f-b8570642e08c.png)
+![image](https://user-images.githubusercontent.com/88672050/201708861-968de58a-c888-45d9-a96c-36750139c1c3.png)
 
 ## Voltage Sensor
 
