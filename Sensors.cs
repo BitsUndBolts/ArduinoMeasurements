@@ -9,7 +9,7 @@ namespace ArduinoTemperatureMonitor
     {
         private readonly SerialPort _port = new SerialPort();
         private readonly StringBuilder _portData = new StringBuilder();
-        private const char SEPARATOR = '|';
+        private const char SEPARATOR = ':';
         private const char TERMINATOR = ';';
         private char[] _activity = new char[] { '|', '/', '-', '\\' };
         private byte _activityPos = 0;
@@ -42,7 +42,7 @@ namespace ArduinoTemperatureMonitor
                 try
                 {
                     SetTextCallback d = new SetTextCallback(SetText);
-                    Invoke(d, new object[] { control, text });
+                    BeginInvoke(d, new object[] { control, text });
                 }
                 catch { }
             }

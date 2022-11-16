@@ -1,31 +1,33 @@
+const float RESOLUTION_MAX = 1024.0;
+
 // --- Temperature ---
 float logR;
 const float R = 10000;
 const float c1 = 1.009249522e-03, c2 = 2.378405444e-04, c3 = 2.019202697e-07;
 
 // --- Voltage ---
-const float VOLT_R1 = 19730.0; // Resistor 1 value (those are my values - measured with multimeter)
-const float VOLT_R2 = 9800.0; // Resistor 2 value (those are my values - measured with multimeter)
-const float VOLT_REF = 5.0;     
+const float VOLT_R1 = 20300.0; // Resistor 1 value
+const float VOLT_R2 = 10000.0; // Resistor 2 value
+const float VOLT_REF = 5.0;
 
 // --- Protocol ---
+int pinToChange = 0;
 bool pinActive[6] = { true, false, false, true, false, false };
 const char EMPTY[1] = "";
-const char SEPERATOR[2] = "|";
-const char TERMINATOR[2]  = ";";
-int pinToChange = -1;
+const char SEPERATOR = ':';
+const char TERMINATOR  = ';';
 
 void setup() {
   Serial.begin(9600);
 }
 
 float temperature(int pin) {
-  logR = log(R * (1023.0 / (float)analogRead(pin) - 1.0));
+  logR = log(R * (RESOLUTION_MAX / (float)analogRead(pin) - 1.0));
   return (1.0 / (c1 + c2*logR + c3*logR*logR*logR)) - 273.15;
 }
 
 float voltage(int pin) {
-  return (analogRead(pin) * VOLT_REF) / 1024.0 / (VOLT_R2/(VOLT_R1+VOLT_R2));
+  return (analogRead(pin) * VOLT_REF) / RESOLUTION_MAX / (VOLT_R2 / (VOLT_R1 + VOLT_R2));
 }
 
 void loop() {
