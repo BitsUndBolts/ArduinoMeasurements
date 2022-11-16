@@ -29,7 +29,6 @@ Located under: \_Dependencies\ArduinoSensors\ArduinoSensors.ino
 
 # User Interface
 ![image](https://user-images.githubusercontent.com/88672050/201484735-b7d8633e-8e13-4291-9762-7a56df95f6ff.png)
-[archive.zip](https://github.com/BitsUndBolts/ArduinoSensors/files/10025111/archive.zip)
 
 # Schematics
 
@@ -45,6 +44,7 @@ The maximum voltage that can be measured is ~15V DC!
 
 # Binary file download
 Precompiled version: [ArduinoSensors.zip](https://github.com/BitsUndBolts/ArduinoSensors/files/10025113/archive.zip)
+[Arduino Sensors.zip](https://github.com/BitsUndBolts/ArduinoSensors/files/10025131/Arduino.Sensors.zip)
 
 # YouTube Video
 Here is a video I have uploaded to YouTube where I use the content of this repository:
