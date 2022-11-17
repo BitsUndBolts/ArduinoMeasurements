@@ -48,5 +48,5 @@ Precompiled version: [ArduinoSensors.zip](https://github.com/BitsUndBolts/Arduin
 <br />MD5 EXE: 62E9AB0CAD85AA265FEBBA69E5B5A936
 
 # YouTube Video
-Here is a video I have uploaded to YouTube where I use the content of this repository:
-- coming soon -
+Here is a video I have uploaded to YouTube where I use the content of this repository:<br />
+[Undervolted Pentium II - and monitor Vcore with an Arduino](https://www.youtube.com/watch?v=-4nXaBZlH8M)
