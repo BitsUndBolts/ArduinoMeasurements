@@ -43,9 +43,8 @@ The maximum voltage that can be measured is ~15V DC!
 ![image](https://user-images.githubusercontent.com/88672050/201735425-d4f8a2f7-c846-4319-ba0c-8f51cb03cf9a.png)
 
 # Binary file download
-Precompiled version: [ArduinoSensors.zip](https://github.com/BitsUndBolts/ArduinoSensors/files/10025172/ArduinoSensors.zip)
-<br />MD5 ZIP: 96D5007173ADB9511C832A8E26DABA21
-<br />MD5 EXE: 62E9AB0CAD85AA265FEBBA69E5B5A936
+For whatever reason - Windows Defender keeps detecting viruses when downloaded from github.<br />
+Therefore, I will not offer the binary file for download.
 
 # YouTube Video
 Here is a video I have uploaded to YouTube where I use the content of this repository:<br />
